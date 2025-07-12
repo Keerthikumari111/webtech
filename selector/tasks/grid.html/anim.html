@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        height: 300px;
+        width: 300px;
+        border: solid;
+        background-color: aqua;
+        transition: all;
+        /* animation-name: changeColor;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        animation-iteration-count: 5; */
+        animation: changeColor 5s 5s linear alternate infinite ;
+    }
+    @keyframes changeColor{
+        0%{
+            background-color: aqua;
+            border-radius: 100%;
+        }
+        25%{
+            background-color: #e2fb7d;
+        }
+        50%{
+            background-color: #fb7dc9;
+        }
+        75%{
+            background-color: #ac0c94;
+        }
+        100%{
+            background-color: greenyellow;
+            border-radius: 0%;
+            transform: translate(300px,300px);
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    width: 100vw;
+    background-color:black;
+    
+}
+nav{
+    height: 100%;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+img[alt="logo"]{
+    height: 50px;
+    width: 50px;
+}
+aside>ul{
+    display: flex;
+    gap: 0px 40px;
+    list-style-type: none;
+    justify-content: center;
+}
+/* aside>button{ */
+    /* padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+} */
+ #Keerthi>button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+ }
+aside>button:hover{
+    cursor: pointer;
+}

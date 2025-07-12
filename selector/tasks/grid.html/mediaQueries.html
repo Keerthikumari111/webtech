@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media print{
+            p{
+                color: aqua;
+                border: 2px solid black;
+                background-color: rgb(209, 234, 50);
+                font-size: 24px;
+                height: 600px;
+            }
+            h2{
+                color: goldenrod;
+                font-size: 100px;
+                background-color: aquamarine;
+            }
+        }
+        @media screen{
+            h1{
+                color: palevioletred;
+                background-color: black;
+                font-size: 50px;
+            }
+        }
+        @media all{
+            h2{
+                color: pink;
+                background-color: sandybrown;
+            }
+        }
+        @media screen and (min-width:1000px){
+            h1{
+                background-color: yellow;
+                color: blue;
+            }
+            h1::before{
+                content: "Desktop";
+            }
+        }
+        @media screen and (min-width:700px) and (max-width:1000px){
+            h1{
+                background-color: blueviolet;
+                color: black;
+
+            }
+            h1::before{
+                content: "Laptop";
+            }
+
+        }
+        @media screen and (min-width:500px) and (max-width:700px){
+            h1{
+                background-color:#f67d41;
+                color: black;
+            }
+            h1::before{
+                content: "Tablet";
+            }
+        }
+        @media screen and (max-width:500px){
+            h1{
+                background-color: #34c3f3;
+                color: aliceblue;
+            }
+            h1::before{
+                content: "Mobile";
+            }
+        } */
+       @media screen and (orientation:portrait) {
+           h1{
+            background-color: red;
+            color: black;
+           }
+           h1::before{
+            content:"Portrait "
+           }
+       }
+       @media screen  and (orientation: landscape){
+        h1{
+            background-color: black;
+            color: red;
+        }
+        h1::before{
+            content: "Landscape ";
+        }
+       }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vero corporis perspiciatis quia quibusdam quidem distinctio id dolorum ab? Iure recusandae esse nostrum suscipit ullam sed harum minus, porro est.</p>
+    <h2>Hey How Are You?</h2>
+    <h1>screen</h1>
+</body>
+</html>

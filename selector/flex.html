@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            height: 700px;
+            width: 1200px;
+            border: 10px solid #140601;
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+            justify-content:end;
+            align-items: end;
+            
+            /* flex-direction: column ; */
+            justify-content:start;
+            align-items: start;
+            /* row-gap: 50px; */
+            /* column-gap: 50px; */
+            gap: 20px 70px;
+            /* flex-wrap: wrap; */
+            /* flex-wrap:nowrap ; */
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: row nowrap;
+           align-content: space-around;
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            font-size: 2rem;
+            text-align: center;
+            border: solid 10px red;
+        }
+        main div:nth-child(1){
+            background-color: blueviolet;
+            order: 0;
+        }
+        main div:nth-child(2){
+            background-color: aqua;
+        }
+        main div:nth-child(3){
+            background-color: #bd3bdd;
+            align-self: end;
+        }
+        main div:nth-child(4){
+            background-color: #b23147;
+            align-self: center;
+        }
+        main div:nth-child(5){
+            background-color: #d8f519;
+        }
+        main div:nth-child(6){
+            background-color: #1f5bfe;
+        }
+        main div:nth-child(7){
+            background-color: #0b9eb8;
+        }
+        main div:nth-child(8){
+            background-color: #8c9445;
+            order: -1;
+        }
+        
+        
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <main>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  
+    </main>
+</body>
+</html>

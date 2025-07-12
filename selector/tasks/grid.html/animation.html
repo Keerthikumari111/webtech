@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            border: solid;
+            /* animation-name: Venkat;
+            transition: all;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse ;
+            animation-iteration-count: infinite; */
+            animation: Venkat 5s 3s linear reverse infinite;
+        }
+        @keyframes Venkat{
+            0%{
+                background-color: black;
+                border-radius: 0%;
+            }
+            25%{
+                background-color: palevioletred;
+            }
+            50%{
+                background-color: rebeccapurple;
+            }
+            75%{
+                background-color: indianred;
+            }
+            100%{
+                background-color: orange;
+                border-radius: 50%;
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
